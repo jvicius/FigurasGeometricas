@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FigurasGeometricas.Modelo;
+using System;
 
 namespace FigurasGeometricas
 {
@@ -10,6 +7,10 @@ namespace FigurasGeometricas
     {
         static void Main(string[] args)
         {
+            var cuadrado = new Cuadrado(5);
+            Console.WriteLine($"Area: {cuadrado.Area()}");
+            Console.WriteLine($"Perimetro: {cuadrado.Perimetro()}");
+            Console.ReadKey();
         }
     }
 }
